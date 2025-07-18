@@ -36,17 +36,23 @@
         <img src="img/10.jpg" >
     </div>
     
-    <audio src="Tiempo-Universe.mp3" autoplay loop controls style="
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 1000;">
-  </audio>
+    <audio id="bg-music" src="Tiempo-Universe.mp3" loop></audio>
+    <button onclick="document.getElementById('bg-music').play(); this.style.display='none';" style="
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffffffaa;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 1000;
+      ">
+      🎶 Reproducir música
+    </button>
 
 </body>
 </html>
